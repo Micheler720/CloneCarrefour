@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atendimento Home | Carrefour</title>
+	<link rel="stylesheet" type="text/css" href="assets/estilos/estilos.css">
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.7.2.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript">		
+		  
+	</script>
+</head>
+<body >
+	<header>
+		<div class="row banner-top1 justify-content-center">
+			<img id="imagemBannerTopo" />
+		</div>
+		<div class="row justify-content-center ">
+			<div class="header-menu align-items-center">
+				<ul>
+					<li class="li-conteudo-nossas-lojas"><a class="link-menu"><img src="assets/imagens/localizacao.png"> Nossas Lojas</a>
+                        <ul class="conteudo-nossas-lojas header-menu-hover">
+                        	<li><a href="">Ofertas das Lojas</a></li>
+                        	<li><a href="">Encontrar uma Loja</a></li>
+                        	<li><a href="">Grupo Carrefour</a></li>
+                        </ul>
+					</li>
+					<li><a href="" class="link-menu"><img src="assets/imagens/apoio.png">Atendimentos</a></li>
+					<li><a href="" class="link-menu"><img src="assets/imagens/pagar.png">Cartão Carrefour</a></li>
+					<li><a href="" class="link-menu"><img src="assets/imagens/mais.png">Seja Parceiro</a></li>
+				</ul>
+			</div>			
+		</div>
+		<div class="row mt-6 header-cabecalho">
+			<div class="menu-mobile" onclick="exibeMenuMobile()">
+				<div class="linhaMobile"></div>
+				<div class="linhaMobile"></div>
+				<div class="linhaMobile"></div>
+			</div>
+			<div class="menu-wrapper-mobile">
+				<div class="menu-mobile-usuario">
+					<div class="usuario-mobile row">
+						<img src="assets/imagens/usuarioMobile.png"/>
+						<span>Olá,<br> <strong>Michele</strong></span>
+					</div>
+					<button class="btn-border-white"> Sair</button>					
+				</div>
+				<div class="row justify-content-flex-start menu-mobile-conta">
+					<div class="menu-mobile-conta-a" >
+						<a href="" class="row row-column align-items-center" > 
+							<img src="assets/imagens/usuario.png"><br>
+							<span class="mt-2">Minha Conta</span>
+						</a>
+					</div>
+					<div class="menu-mobile-conta-a">
+						<a href="" class="row row-column align-items-center" > 
+							<img src="assets/imagens/pedido.png"><br>
+							<span class="mt-2">Meus Pedidos</span>
+						</a>
+					</div>
+					<div class="menu-mobile-conta-a">
+						<a href="" class="row row-column align-items-center" >
+							<img src="assets/imagens/minhaLista.png"><br> 
+							<span class="mt-2">Minha Lista</span>
+						</a>	
+					</div>
+				</div>
+				<div class="menu-mobile-familia row row-column">
+						<div class="menu-mobile-familia-titulo row justify-content-space-between menu-mercado ">
+							<span>
+								<img src="assets/imagens/mercado.png">
+								Mercado
+							</span>
+							<a href="">Acessar Mercado</a>
+						</div>
+						<div class="row">
+							<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+								<span>
+									Matinais
+								</span>
+								<!-- Passar posição como parametro do Java Script-->
+								<img src="assets/imagens/seta-para-baixo.png" >							
+							</div>
+							<ul class="submenu-mobile-familia-item oculto ">
+								<li><a href="">Achocolatados</a></li>
+								<li><a href="">Biscoitos e Cereais</a></li>
+							</ul>
+						</div>
+						<div class="row">
+							<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+								<span>
+									Alimentos Basicos
+								</span>
+								<img src="assets/imagens/seta-para-baixo.png" >							
+							</div>
+							<ul class="submenu-mobile-familia-item oculto ">
+								<li><a href="">Arroz e grãos</a></li>
+								<li><a href="">Azeites, óleos Vinagres</a></li>
+							</ul>
+						</div>
+						<div class="row  oculto">
+							<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+								<span>
+									Frescos e Refrigerados
+								</span>
+								<img src="assets/imagens/seta-para-baixo.png" >							
+							</div>
+							<ul class="submenu-mobile-familia-item oculto ">
+								<li><a href="">Arroz e grãos</a></li>
+								<li><a href="">Azeites, óleos Vinagres</a></li>
+							</ul>
+						</div>
+						<div class="row  oculto">
+							<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+								<span>
+									Bebidas
+								</span>
+								<img src="assets/imagens/seta-para-baixo.png" >							
+							</div>
+							<ul class="submenu-mobile-familia-item oculto ">
+								<li><a href="">Arroz e grãos</a></li>
+								<li><a href="">Azeites, óleos Vinagres</a></li>
+							</ul>
+						</div>
+						<div class="row  oculto">
+							<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+								<span>
+									Limpezas e Perfumaria
+								</span>
+								<img src="assets/imagens/seta-para-baixo.png" >							
+							</div>
+							<ul class="submenu-mobile-familia-item oculto ">
+								<li><a href="">Arroz e grãos</a></li>
+								<li><a href="">Azeites, óleos Vinagres</a></li>
+							</ul>
+						</div>
+						<div class="row  oculto">
+							<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+								<span>
+									Saudaveis
+								</span>
+								<img src="assets/imagens/seta-para-baixo.png" >							
+							</div>
+							<ul class="submenu-mobile-familia-item oculto ">
+								<li><a href="">Arroz e grãos</a></li>
+								<li><a href="">Azeites, óleos Vinagres</a></li>
+							</ul>
+						</div>
+						<div class="submenu-mobile-familia-button row justify-content-center">
+							<button class="btn-border-blue" onclick="exibirMenusOcultos()"> Mais opções de mercado </button> 
+						</div>
+				</div>
+				<div class="menu-mobile-familia row row-column">
+					<div class="menu-mobile-familia-titulo row justify-content-space-between menu-departamento ">
+						<span>
+							<img src="assets/imagens/departamentos.png">
+							Departamentos
+						</span>
+					</div>
+					<div class="row">
+						<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+							<span>
+								Tecnologias e eletronicos
+							</span>
+							<img src="assets/imagens/seta-para-baixo.png" >							
+						</div>
+						<ul class="submenu-mobile-familia-item oculto ">
+							<li><a href="">Achocolatados</a></li>
+							<li><a href="">Biscoitos e Cereais</a></li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+							<span>
+								Alimentos Basicos
+							</span>
+							<img src="assets/imagens/seta-para-baixo.png" >							
+						</div>
+						<ul class="submenu-mobile-familia-item oculto ">
+							<li><a href="">Arroz e grãos</a></li>
+							<li><a href="">Azeites, óleos Vinagres</a></li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+							<span>
+								Frescos e Refrigerados
+							</span>
+							<img src="assets/imagens/seta-para-baixo.png" >							
+						</div>
+						<ul class="submenu-mobile-familia-item oculto ">
+							<li><a href="">Arroz e grãos</a></li>
+							<li><a href="">Azeites, óleos Vinagres</a></li>
+						</ul>
+					</div>
+					<div class="row ">
+						<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+							<span>
+								Bebidas
+							</span>
+							<img src="assets/imagens/seta-para-baixo.png" >							
+						</div>
+						<ul class="submenu-mobile-familia-item oculto ">
+							<li><a href="">Arroz e grãos</a></li>
+							<li><a href="">Azeites, óleos Vinagres</a></li>
+						</ul>
+					</div>
+					<div class="row ">
+						<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+							<span>
+								Limpezas e Perfumaria
+							</span>
+							<img src="assets/imagens/seta-para-baixo.png" >							
+						</div>
+						<ul class="submenu-mobile-familia-item oculto ">
+							<li><a href="">Arroz e grãos</a></li>
+							<li><a href="">Azeites, óleos Vinagres</a></li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="menu-mobile-familia-item row justify-content-space-between" onclick="exibeSubmenuMobile(this)">
+							<span>
+								Saudaveis
+							</span>
+							<img src="assets/imagens/seta-para-baixo.png" >							
+						</div>
+						<ul class="submenu-mobile-familia-item oculto ">
+							<li><a href="">Arroz e grãos</a></li>
+							<li><a href="">Azeites, óleos Vinagres</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row justify-content-flex-start menu-mobile-footer">
+					<div class="menu-mobile-footer-item">
+						<a href="" class="row row-column align-items-center"> 
+							<img src="assets/imagens/ofertas.png"> 
+							<span>Ofertas das lojas</span> 
+						</a>
+					</div>
+					<div class="menu-mobile-footer-item">
+						<a href="" class="row row-column align-items-center"> 
+							<img src="assets/imagens/localizacao.png"> 
+							<span>Encontrar lojas</span> 
+						</a>
+					</div>
+					<div class="menu-mobile-footer-item">
+						<a href="" class="row row-column align-items-center"> 
+							<img src="assets/imagens/apoio.png"> 
+							<span>Atendimento</span> 
+						</a>
+					</div>
+					<div class="menu-mobile-footer-item">
+						<a href="" class="row row-column align-items-center"> 
+							<img src="assets/imagens/pagar.png"> 
+							<span>Cartão Carrefour</span> 
+						</a>
+					</div>
+					<div class="menu-mobile-footer-item">
+						<a href="" class="row row-column align-items-center"> 
+							<img src="assets/imagens/localizacao.png"> 
+							<span>Grupo Carrefour</span> 
+						</a>
+					</div>
+					<div class="menu-mobile-footer-item">
+						<a href="" class="row row-column align-items-center"> 
+							<img src="assets/imagens/mais.png"> 
+							<span>Seja Parceiro</span> 
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu-wrapper row justify-content-flex-end">
+				<div class="menu-mobile-oculta" onclick="ocultaMenuMobile()">
+					<div class="linhaMobile"></div>
+					<div class="linhaMobile"></div>
+					<div class="linhaMobile"></div>
+				</div>
+			</div>
+			<div class="header-logo" >				
+				<a href="" class="row justify-content-center"><img src="assets/imagens/logoCarrefourSite.svg" ></a>
+			</div>
+			<div class="header-pesquisa row justify-content-center">
+				<div class="row align-items-center justify-content-space-between pesquisa-site">
+					<input type="text" placeholder="O que você está procurando?" name="" class="">
+					<div class="imagem-pesquisa"><img src="assets/imagens/procurar.png" ></div>
+				</div>
+			</div>
+			<div class="header-usuario mt-3">
+				<div class="dados-usuario row">				
+					<img src="assets/imagens/usuario.png">
+					<span>Olá, <br><strong>Michele</strong></span>					
+				</div>
+				<ul class="header-menu-hover header-menu-usuario">
+						<li><a href="">Minha Conta</a></li>
+						<li><a href="">Meus Pedidos</a></li>
+						<li><a href="">Minhas Listas</a></li>
+						<li><a href="">Sair</a></li>
+				</ul>
+			</div>
+			<div class="header-carrinho row mt-3 justify-content-flex-start">
+				<img src="assets/imagens/carrinho.png">
+				<div class="info-carrinho">0</div>
+			</div>			
+		</div>
+		<div class="menu row justify-content-center align-items-center">			
+			<nav class="row nav-bar">
+				<ul class="nav-bar-menu row align-items-center">
+					<li class="nav-bar-submenu submenu-departamentos">
+						<img src="assets/imagens/Departamentos.png"> <a href="" class="menu-departamento">Departamentos</a>
+						<ul class="submenu-interno">
+							<li><a href="">Auto Ferramentas</a> 
+								<img src="assets/imagens/proximo.png">
+								<ul class="submenu-interno2">
+									<li >
+										<ul class="submenu-interno3">
+											<li class="categoria-titulo">Pneus</li>
+											<li><a href="">Aro 13</a></li>
+											<li><a href="">Aro 14</a></li>
+											<li><a href="">Aro 15</a></li>
+											<li><a href="">Aro 16</a></li>
+											<li><a href="">Aro 17</a></li>
+										</ul>
+									</li>
+									<li >
+										<ul class="submenu-interno3">
+											<li class="categoria-titulo">Automotivo</li>
+											<li><a href="">Aro 13</a></li>
+											<li><a href="">Aro 14</a></li>
+											<li><a href="">Aro 15</a></li>
+											<li><a href="">Aro 16</a></li>
+											<li><a href="">Aro 17</a></li>
+										</ul>
+									</li>
+									<li>
+										<ul class="submenu-interno3">
+											<li class="categoria-titulo">Segurança</li>
+											<li><a href="">Aro 13</a></li>
+											<li><a href="">Aro 14</a></li>
+											<li><a href="">Aro 15</a></li>
+											<li><a href="">Aro 16</a></li>
+											<li><a href="">Aro 17</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="">Casa e decoração</a>
+								<img src="assets/imagens/proximo.png">
+								<ul class="submenu-interno2">
+									<li >
+										<ul class="submenu-interno3">
+											<li class="categoria-titulo">Pneus</li>
+											<li><a href="">Aro 13</a></li>
+											<li><a href="">Aro 14</a></li>
+											<li><a href="">Aro 15</a></li>
+											<li><a href="">Aro 16</a></li>
+											<li><a href="">Aro 17</a></li>
+										</ul>
+									</li>									
+								</ul>
+							</li>
+							<li><a href="">Cultura e Entreterimento</a>
+								<img src="assets/imagens/proximo.png">
+								<ul class="submenu-interno2">
+									<li >
+										<ul class="submenu-interno3">
+											<li class="categoria-titulo">Pneus</li>
+											<li><a href="">Aro 13</a></li>
+											<li><a href="">Aro 14</a></li>
+											<li><a href="">Aro 15</a></li>
+											<li><a href="">Aro 16</a></li>
+											<li><a href="">Aro 17</a></li>
+										</ul>
+									</li>									
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-bar-submenu submenu-mercado">
+						<img src="assets/imagens/mercado.png">
+						<a href="" class="menu-mercado">Mercado</a>
+						<ul class="submenu-interno">
+							<li><a href="">Alimentos basicos</a>
+								<img src="assets/imagens/proximo.png">
+								<ul class="submenu-interno2">
+									<li >
+										<ul class="submenu-interno3">
+											<li class="categoria-titulo">Pneus</li>
+											<li><a href="">Aro 13</a></li>
+											<li><a href="">Aro 14</a></li>
+											<li><a href="">Aro 15</a></li>
+											<li><a href="">Aro 16</a></li>
+											<li><a href="">Aro 17</a></li>
+										</ul>
+									</li>									
+								</ul>
+							</li>
+							<li><a href="">Bebidas</a>
+								<img src="assets/imagens/proximo.png">
+								<ul class="submenu-interno2">
+									<li >
+										<ul class="submenu-interno3">
+											<li class="categoria-titulo">Pneus</li>
+											<li><a href="">Aro 13</a></li>
+											<li><a href="">Aro 14</a></li>
+											<li><a href="">Aro 15</a></li>
+											<li><a href="">Aro 16</a></li>
+											<li><a href="">Aro 17</a></li>
+										</ul>
+									</li>									
+								</ul>
+							</li>
+							<li><a href="">Cultura e Entreterimento</a>
+								<img src="assets/imagens/proximo.png">
+								<ul class="submenu-interno2">
+									<li >
+										<ul class="submenu-interno3">
+											<li class="categoria-titulo">Pneus</li>
+											<li><a href="">Aro 13</a></li>
+											<li><a href="">Aro 14</a></li>
+											<li><a href="">Aro 15</a></li>
+											<li><a href="">Aro 16</a></li>
+											<li><a href="">Aro 17</a></li>
+										</ul>
+									</li>									
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Treine em Casa</a></li>
+					<li><a href="">Notebooks</a></li>
+					<li><a href="">Fraldas</a></li>
+					<li><a href="">TVs</a></li>
+					<li><a href="">Galaxy S20</a></li>
+					<li><a href="">Celular</a></li>
+					<li><a href="">Geladeira</a></li>
+					<li><a href="">Pneus</a></li>
+					<li><a href="">Click e Retire</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="row justify-content-center banner-menu">
+			<img id="banner-menu" >
+		</div>
+	</header>
+	<section class="banner-slide-show" >
+		<div class="menu-rotativo row align-items-center justify-content-space-between">
+			<div class="menu-prev menu-rotativo-item row justify-content-center align-items-center" onclick="passarSlide();">
+				<img src="assets/imagens/anterior.png">
+			</div>
+			<div class="menu-prox menu-rotativo-item row justify-content-center align-items-center " onclick="passarSlide()">
+			   <img src="assets/imagens/proximo.png">
+			</div>
+	   </div>
+		<div class="row justify-content-center align-items-flex-end  slideshow" id = "slideshow">
+			<div class="row justify-content-center align-items-center slideBolinha mb-1">
+				<div class="bolinha" onclick="mudarSlide('0');"></div>
+				<div class="bolinha" onclick="mudarSlide('1');"></div>
+				<div class="bolinha" onclick="mudarSlide('2');"></div>
+				<div class="bolinha" onclick="mudarSlide('3');"></div>
+				<div class="bolinha" onclick="mudarSlide('4');"></div>
+				<div class="bolinha" onclick="mudarSlide('5');"></div>
+				<div class="bolinha" onclick="mudarSlide('6');"></div>
+				<div class="bolinha" onclick="mudarSlide('7');"></div>
+				<div class="bolinha" onclick="mudarSlide('8');"></div>
+				<div class="bolinha" onclick="mudarSlide('9');"></div>
+				<div class="bolinha" onclick="mudarSlide('10');"></div>					
+			</div>
+			<div class="slide-show-area" >
+				<div class="slides" data-desktop = 'assets/imagens/imagem1.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem2.png.jfif' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem4.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>				
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem5.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem6.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem7.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem8.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>				
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem9.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem10.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">	
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem11.png' data-mobile = 'assets/imagens/imagem11m.png' >
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+				<div class="slides" data-desktop = 'assets/imagens/imagem12.png' data-mobile = 'assets/imagens/imagem11m.png'>
+					<a href="">
+						<div class="slidesInfo">
+							<div class="slidesInfoTitulo"></div>
+							<div class="slidesInfoSubTitulo"></div>						
+						</div>
+					</a>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="produtos-secundarios">
+		<div class="row justify-content-space-between produtos-secundarios-item">
+			<div> <img src="assets/imagens/smartphone1.png"> </div>
+			<div> <img src="assets/imagens/smartphone2.png"> </div>
+			<div> <img src="assets/imagens/smartphone3.png"> </div>
+			<div> <img src="assets/imagens/smartphone4.png"> </div>
+		</div>
+	</section>
+	<section class="departamentos-ofertas">
+		<div class="row justify-content-center">
+			<h3>Os principais departamentos com ofertas exclusivas para você!</h3>
+		</div>
+		<div class="row departamento-group-item-scroll">
+		<div class="row departamento-group-item">
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+			<div class="row departamento-item justify-content-center">
+				<div class="departamento-item-round">
+					<img src="">
+				</div>
+				<a href="#">Mercado</a>
+			</div>
+		</div>	
+		</div>		
+	</section>
+	<section class="produtos-supermercados">
+		<div class="row justify-content-center mt-6">
+			<h3>Abasteça sua despensa em nosso mercado online! </h3>
+		</div>
+		<div class="menu-rotativo-mercado row align-items-center justify-content-space-between">
+			<div class="menu-prev menu-rotativo-mercado-item row justify-content-center align-items-center" onclick="passarSlideMercado();">
+				<img src="assets/imagens/anterior.png">
+			</div>
+			<div class="menu-prox menu-rotativo-mercado-item row justify-content-center align-items-center " onclick="passarSlideMercado()">
+			   <img src="assets/imagens/proximo.png">
+			</div>
+	    </div>
+		<div class="row justify-content-space-between mt-6" >			
+			<div id="slideshow-mercado" >
+				<div class="slide-show-area-mercado">
+					<div class="slides-mercado" data-desktop = 'assets/imagens/imagem1.png' data-mobile = 'assets/imagens/imagem11m.png'>
+						<a href="">
+							<div class="slidesInfo">
+								<div class="slidesInfoTitulo"></div>
+								<div class="slidesInfoSubTitulo"></div>						
+							</div>
+						</a>					
+					</div>
+					<div class="slides-mercado" data-desktop = 'assets/imagens/imagem2.png.jfif' data-mobile = 'assets/imagens/imagem11m.png'>
+						<a href="">
+							<div class="slidesInfo">
+								<div class="slidesInfoTitulo"></div>
+								<div class="slidesInfoSubTitulo"></div>						
+							</div>
+						</a>					
+					</div>					
+				</div>
+			</div>
+			<div class="mercado-banner">
+				
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
